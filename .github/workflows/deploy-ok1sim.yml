@@ -1,4 +1,4 @@
-name: Deploy OK1SIM to server
+name: Deploy ok1sim.cz to server
 
 on:
   push:
