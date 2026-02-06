@@ -34,7 +34,7 @@
   </style>
 </head>
 <body>
-  <main class="container" role="main" >
+  <main class="container" role="main">
     <h1>OK1SIM</h1>
   </main>
 </body>
