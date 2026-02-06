@@ -35,7 +35,7 @@
 </head>
 <body>
   <main class="container" role="main" >
-    <h1>OK1SIM</h1>
+    <h1>OK1SIM.cz</h1>
   </main>
 </body>
 </html>
