@@ -16,9 +16,11 @@ jobs:
     - name: Deploy via rsync
       uses: burnett01/rsync-deployments@7.0.1
       with:
-        switches: "-avz --delete --omit-dir-times"
-        path: ./        # nebo cesta k ok1sim projektu
-        remote_path: /var/www/ok1sim.cz
+        switches: "-avz --delete --no-perms --no-owner --no-group"
+        path: ./public_html/
+        remote_path: /var/www/ok1sim.cz/public_html/
         remote_host: ${{ secrets.SSH_HOST }}
         remote_user: ${{ secrets.SSH_USER }}
         remote_key: ${{ secrets.SSH_KEY }}
+
+        
