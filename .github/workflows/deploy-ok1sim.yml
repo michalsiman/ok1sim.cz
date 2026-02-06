@@ -16,7 +16,7 @@ jobs:
     - name: Deploy via rsync
       uses: burnett01/rsync-deployments@7.0.1
       with:
-        switches: -avz --delete
+        switches: -avz --delete 
         path: ./        # nebo cesta k ok1sim projektu
         remote_path: /var/www/ok1sim.cz
         remote_host: ${{ secrets.SSH_HOST }}
