@@ -4,3 +4,4 @@ Projekt webové prezentace ok1sim.cz. Učím se na ni práci s GITem a GITHUBem.
 
 - webová prezentace
 - synchronizace s VS CODE
+- https://gohugo.io/
