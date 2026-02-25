@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a752fd8a8d04d89f389e6843c4bd5f84 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a752fd8a8d04d89f389e6843c4bd5f84" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a752fd8a8d04d89f389e6843c4bd5f84 = L.map(
+                "map_a752fd8a8d04d89f389e6843c4bd5f84",
+                {
+                    center: [49.8, 15.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+
+            
+
+        
+    
+            var tile_layer_5365e15ed6f31e4446f4dc5106774b5f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5365e15ed6f31e4446f4dc5106774b5f.addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+            var circle_marker_853d594ce31a1a7b6e6b3bde14d45805 = L.circleMarker(
+                [50.0752883, 12.3544316],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_2b5312259455bbffb3fa958f3c63691c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24217a39190518e88ed27a6ca214a422 = $(`<div id="html_24217a39190518e88ed27a6ca214a422" style="width: 100.0%; height: 100.0%;"><b>1. základní škola Cheb, Americká 36, příspěvková organizace, Cheb, Americká</b><br>Hodnota: 2</div>`)[0];
+                popup_2b5312259455bbffb3fa958f3c63691c.setContent(html_24217a39190518e88ed27a6ca214a422);
+            
+        
+
+        circle_marker_853d594ce31a1a7b6e6b3bde14d45805.bindPopup(popup_2b5312259455bbffb3fa958f3c63691c)
+        ;
+
+        
+    
+    
+            circle_marker_853d594ce31a1a7b6e6b3bde14d45805.bindTooltip(
+                `<div>
+                     1. základní škola Cheb, Americká 36, příspěvková organizace, Cheb, Americká: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97ed773bc24c5210e1d61d2ff0109c9c = L.circleMarker(
+                [49.7810977, 13.3794591],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_60e347ed9870956a99193d6be4e65c5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_831958adb46d27001956b20df47f7b58 = $(`<div id="html_831958adb46d27001956b20df47f7b58" style="width: 100.0%; height: 100.0%;"><b>1. základní škola Plzeň, Západní 18, příspěvková organizace, Plzeň, Západní</b><br>Hodnota: 1</div>`)[0];
+                popup_60e347ed9870956a99193d6be4e65c5f.setContent(html_831958adb46d27001956b20df47f7b58);
+            
+        
+
+        circle_marker_97ed773bc24c5210e1d61d2ff0109c9c.bindPopup(popup_60e347ed9870956a99193d6be4e65c5f)
+        ;
+
+        
+    
+    
+            circle_marker_97ed773bc24c5210e1d61d2ff0109c9c.bindTooltip(
+                `<div>
+                     1. základní škola Plzeň, Západní 18, příspěvková organizace, Plzeň, Západní: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d28a41a3272286f533f378624202cdde = L.circleMarker(
+                [49.7247778, 13.3723237],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_a35a9b15cfad03fd1eebe944c718fbd9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f09a7008acc4b1a6b3196ab3966bfe18 = $(`<div id="html_f09a7008acc4b1a6b3196ab3966bfe18" style="width: 100.0%; height: 100.0%;"><b>11. základní škola Plzeň, Baarova 31, příspěvková organizace, Plzeň, Baarova</b><br>Hodnota: 2</div>`)[0];
+                popup_a35a9b15cfad03fd1eebe944c718fbd9.setContent(html_f09a7008acc4b1a6b3196ab3966bfe18);
+            
+        
+
+        circle_marker_d28a41a3272286f533f378624202cdde.bindPopup(popup_a35a9b15cfad03fd1eebe944c718fbd9)
+        ;
+
+        
+    
+    
+            circle_marker_d28a41a3272286f533f378624202cdde.bindTooltip(
+                `<div>
+                     11. základní škola Plzeň, Baarova 31, příspěvková organizace, Plzeň, Baarova: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a228c8b10ee918efc0f086f7f798ec8 = L.circleMarker(
+                [49.7378563, 13.3968606],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_25721acbae509c61207992c22def7c2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5fdc2a28275bb6f565b7032192b74543 = $(`<div id="html_5fdc2a28275bb6f565b7032192b74543" style="width: 100.0%; height: 100.0%;"><b>13. základní škola Plzeň, Habrmannova 45, příspěvková organizace, Plzeň, Habrmannova</b><br>Hodnota: 3</div>`)[0];
+                popup_25721acbae509c61207992c22def7c2d.setContent(html_5fdc2a28275bb6f565b7032192b74543);
+            
+        
+
+        circle_marker_6a228c8b10ee918efc0f086f7f798ec8.bindPopup(popup_25721acbae509c61207992c22def7c2d)
+        ;
+
+        
+    
+    
+            circle_marker_6a228c8b10ee918efc0f086f7f798ec8.bindTooltip(
+                `<div>
+                     13. základní škola Plzeň, Habrmannova 45, příspěvková organizace, Plzeň, Habrmannova: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74d1fc83b9fe67c65b01521585621432 = L.circleMarker(
+                [49.759564, 13.4189972],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_ff019f5000b8dd4e1cb2805cc93e7e20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_caa6da20dcc620e149b40e78a583f89c = $(`<div id="html_caa6da20dcc620e149b40e78a583f89c" style="width: 100.0%; height: 100.0%;"><b>14. základní škola Plzeň, Zábělská 25, příspěvková organizace, Plzeň, Zábělská</b><br>Hodnota: 4</div>`)[0];
+                popup_ff019f5000b8dd4e1cb2805cc93e7e20.setContent(html_caa6da20dcc620e149b40e78a583f89c);
+            
+        
+
+        circle_marker_74d1fc83b9fe67c65b01521585621432.bindPopup(popup_ff019f5000b8dd4e1cb2805cc93e7e20)
+        ;
+
+        
+    
+    
+            circle_marker_74d1fc83b9fe67c65b01521585621432.bindTooltip(
+                `<div>
+                     14. základní škola Plzeň, Zábělská 25, příspěvková organizace, Plzeň, Zábělská: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02c6b00f0055904a869cbac91aa24cdb = L.circleMarker(
+                [49.7416106, 13.3300046],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.555555555555557, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_69d8f189380eb65a5d01fbef32f334bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f6ac9aeb2b16deada8648e4b47e949f = $(`<div id="html_6f6ac9aeb2b16deada8648e4b47e949f" style="width: 100.0%; height: 100.0%;"><b>15. základní škola Plzeň, Terezie Brzkové 33-35, příspěvková organizace, Plzeň, Terezie Brzkové</b><br>Hodnota: 8</div>`)[0];
+                popup_69d8f189380eb65a5d01fbef32f334bc.setContent(html_6f6ac9aeb2b16deada8648e4b47e949f);
+            
+        
+
+        circle_marker_02c6b00f0055904a869cbac91aa24cdb.bindPopup(popup_69d8f189380eb65a5d01fbef32f334bc)
+        ;
+
+        
+    
+    
+            circle_marker_02c6b00f0055904a869cbac91aa24cdb.bindTooltip(
+                `<div>
+                     15. základní škola Plzeň, Terezie Brzkové 33-35, příspěvková organizace, Plzeň, Terezie Brzkové: 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ec10c8a3b567869f25c1c4905eb2574 = L.circleMarker(
+                [49.7427626, 13.3763603],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_73ea11368eb56dd827538efd442e0d96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f909cfab3aea225edc0e0ec96d3dd7e = $(`<div id="html_7f909cfab3aea225edc0e0ec96d3dd7e" style="width: 100.0%; height: 100.0%;"><b>16. základní škola a mateřská škola Plzeň, Americká třída 30, příspěvková organizace, Plzeň, Americká</b><br>Hodnota: 1</div>`)[0];
+                popup_73ea11368eb56dd827538efd442e0d96.setContent(html_7f909cfab3aea225edc0e0ec96d3dd7e);
+            
+        
+
+        circle_marker_6ec10c8a3b567869f25c1c4905eb2574.bindPopup(popup_73ea11368eb56dd827538efd442e0d96)
+        ;
+
+        
+    
+    
+            circle_marker_6ec10c8a3b567869f25c1c4905eb2574.bindTooltip(
+                `<div>
+                     16. základní škola a mateřská škola Plzeň, Americká třída 30, příspěvková organizace, Plzeň, Americká: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e58239113f87baa59c4a397870366428 = L.circleMarker(
+                [49.7543768, 13.3779101],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_e65d664ce1af5e6655b5fc03e758f9c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13913f0bef84c3065b649cf9b7a7355d = $(`<div id="html_13913f0bef84c3065b649cf9b7a7355d" style="width: 100.0%; height: 100.0%;"><b>17. základní škola a mateřská škola Plzeň, Malická 1, příspěvková organizace, Plzeň, Malická</b><br>Hodnota: 4</div>`)[0];
+                popup_e65d664ce1af5e6655b5fc03e758f9c8.setContent(html_13913f0bef84c3065b649cf9b7a7355d);
+            
+        
+
+        circle_marker_e58239113f87baa59c4a397870366428.bindPopup(popup_e65d664ce1af5e6655b5fc03e758f9c8)
+        ;
+
+        
+    
+    
+            circle_marker_e58239113f87baa59c4a397870366428.bindTooltip(
+                `<div>
+                     17. základní škola a mateřská škola Plzeň, Malická 1, příspěvková organizace, Plzeň, Malická: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_30ee717ea6a0a2de9286a5764ac4f997 = L.circleMarker(
+                [49.7362121, 13.3647407],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_73dd7a211094a6f3060bd34ad5334092 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45f0b5299c1b35bdd57e63f5a2df21ca = $(`<div id="html_45f0b5299c1b35bdd57e63f5a2df21ca" style="width: 100.0%; height: 100.0%;"><b>2. základní škola Plzeň, Schwarzova 20, příspěvková organizace, Plzeň, Schwarzova</b><br>Hodnota: 2</div>`)[0];
+                popup_73dd7a211094a6f3060bd34ad5334092.setContent(html_45f0b5299c1b35bdd57e63f5a2df21ca);
+            
+        
+
+        circle_marker_30ee717ea6a0a2de9286a5764ac4f997.bindPopup(popup_73dd7a211094a6f3060bd34ad5334092)
+        ;
+
+        
+    
+    
+            circle_marker_30ee717ea6a0a2de9286a5764ac4f997.bindTooltip(
+                `<div>
+                     2. základní škola Plzeň, Schwarzova 20, příspěvková organizace, Plzeň, Schwarzova: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fc9817a9f74f094a50587610bbf641d = L.circleMarker(
+                [49.7289438, 13.4049486],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_ceaa04a5914f259aa8fadaae7c95d87e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3532a2cc98609d260664374fbefb58cd = $(`<div id="html_3532a2cc98609d260664374fbefb58cd" style="width: 100.0%; height: 100.0%;"><b>20. základní škola Plzeň, Brojova 13, příspěvková organizace, Plzeň, Brojova</b><br>Hodnota: 1</div>`)[0];
+                popup_ceaa04a5914f259aa8fadaae7c95d87e.setContent(html_3532a2cc98609d260664374fbefb58cd);
+            
+        
+
+        circle_marker_1fc9817a9f74f094a50587610bbf641d.bindPopup(popup_ceaa04a5914f259aa8fadaae7c95d87e)
+        ;
+
+        
+    
+    
+            circle_marker_1fc9817a9f74f094a50587610bbf641d.bindTooltip(
+                `<div>
+                     20. základní škola Plzeň, Brojova 13, příspěvková organizace, Plzeň, Brojova: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62e67d66b505021c326a6187bd70bf1b = L.circleMarker(
+                [49.7261443, 13.40186],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.333333333333336, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_9d7a2be0c6fdbdb32282a9b0552b579d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea2cae8d7af8d60ee24005ccbd1d3113 = $(`<div id="html_ea2cae8d7af8d60ee24005ccbd1d3113" style="width: 100.0%; height: 100.0%;"><b>21. základní škola Plzeň, Slovanská alej 13, příspěvková organizace, Plzeň, Slovanská alej</b><br>Hodnota: 7</div>`)[0];
+                popup_9d7a2be0c6fdbdb32282a9b0552b579d.setContent(html_ea2cae8d7af8d60ee24005ccbd1d3113);
+            
+        
+
+        circle_marker_62e67d66b505021c326a6187bd70bf1b.bindPopup(popup_9d7a2be0c6fdbdb32282a9b0552b579d)
+        ;
+
+        
+    
+    
+            circle_marker_62e67d66b505021c326a6187bd70bf1b.bindTooltip(
+                `<div>
+                     21. základní škola Plzeň, Slovanská alej 13, příspěvková organizace, Plzeň, Slovanská alej: 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19afbb17636d512f944547c26622c148 = L.circleMarker(
+                [49.750455, 13.4194031],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.11111111111111, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_c033013e542d2178df49c135dd2567e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eae9f894fd70149530a3532439cc49e9 = $(`<div id="html_eae9f894fd70149530a3532439cc49e9" style="width: 100.0%; height: 100.0%;"><b>22. základní škola Plzeň, Na Dlouhých 49, příspěvková organizace, Plzeň, Na Dlouhých</b><br>Hodnota: 6</div>`)[0];
+                popup_c033013e542d2178df49c135dd2567e8.setContent(html_eae9f894fd70149530a3532439cc49e9);
+            
+        
+
+        circle_marker_19afbb17636d512f944547c26622c148.bindPopup(popup_c033013e542d2178df49c135dd2567e8)
+        ;
+
+        
+    
+    
+            circle_marker_19afbb17636d512f944547c26622c148.bindTooltip(
+                `<div>
+                     22. základní škola Plzeň, Na Dlouhých 49, příspěvková organizace, Plzeň, Na Dlouhých: 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3852af553e824a42c04a03484f271b3d = L.circleMarker(
+                [49.7228295, 13.4033754],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_c609d76847bcfdf2d4c3674776d1f4e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5bfa21da48020db7e28949ffd4d15aee = $(`<div id="html_5bfa21da48020db7e28949ffd4d15aee" style="width: 100.0%; height: 100.0%;"><b>25. základní škola Plzeň, Chválenická 17, příspěvková organizace, Plzeň, Chválenická</b><br>Hodnota: 4</div>`)[0];
+                popup_c609d76847bcfdf2d4c3674776d1f4e8.setContent(html_5bfa21da48020db7e28949ffd4d15aee);
+            
+        
+
+        circle_marker_3852af553e824a42c04a03484f271b3d.bindPopup(popup_c609d76847bcfdf2d4c3674776d1f4e8)
+        ;
+
+        
+    
+    
+            circle_marker_3852af553e824a42c04a03484f271b3d.bindTooltip(
+                `<div>
+                     25. základní škola Plzeň, Chválenická 17, příspěvková organizace, Plzeň, Chválenická: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fab1068f9f840676e627cdd83764a8e9 = L.circleMarker(
+                [49.7238026, 13.371476],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_7ddfe19961a5bfbb01649e9c72b70961 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d25c8d7980e85ade232b16f591ccc73 = $(`<div id="html_8d25c8d7980e85ade232b16f591ccc73" style="width: 100.0%; height: 100.0%;"><b>26. základní škola Plzeň, Skupova 22, příspěvková organizace, Plzeň, Skupova</b><br>Hodnota: 3</div>`)[0];
+                popup_7ddfe19961a5bfbb01649e9c72b70961.setContent(html_8d25c8d7980e85ade232b16f591ccc73);
+            
+        
+
+        circle_marker_fab1068f9f840676e627cdd83764a8e9.bindPopup(popup_7ddfe19961a5bfbb01649e9c72b70961)
+        ;
+
+        
+    
+    
+            circle_marker_fab1068f9f840676e627cdd83764a8e9.bindTooltip(
+                `<div>
+                     26. základní škola Plzeň, Skupova 22, příspěvková organizace, Plzeň, Skupova: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f498708b4e3ee65c65383f0535b2fae7 = L.circleMarker(
+                [49.7450673, 13.4100031],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.333333333333336, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_ec86e84fdf568b5c4755f79b5b547cb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e147d1d80f7db787ef9df5ebb1737c86 = $(`<div id="html_e147d1d80f7db787ef9df5ebb1737c86" style="width: 100.0%; height: 100.0%;"><b>28. základní škola Plzeň, Rodinná 39, příspěvková organizace, Plzeň, Rodinná</b><br>Hodnota: 7</div>`)[0];
+                popup_ec86e84fdf568b5c4755f79b5b547cb1.setContent(html_e147d1d80f7db787ef9df5ebb1737c86);
+            
+        
+
+        circle_marker_f498708b4e3ee65c65383f0535b2fae7.bindPopup(popup_ec86e84fdf568b5c4755f79b5b547cb1)
+        ;
+
+        
+    
+    
+            circle_marker_f498708b4e3ee65c65383f0535b2fae7.bindTooltip(
+                `<div>
+                     28. základní škola Plzeň, Rodinná 39, příspěvková organizace, Plzeň, Rodinná: 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f3085d0e098a37bb4944a6c1d18c699 = L.circleMarker(
+                [49.5548928, 13.0776553],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_238f9b6c36afea3e83984c958e8a5c24 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf5e4a392fec1d49f69df7f836b941a4 = $(`<div id="html_cf5e4a392fec1d49f69df7f836b941a4" style="width: 100.0%; height: 100.0%;"><b>31. základní škola Plzeň, E. Krásnohorské 10, příspěvková organizace, Plzeň, Elišky Krásnohorské</b><br>Hodnota: 4</div>`)[0];
+                popup_238f9b6c36afea3e83984c958e8a5c24.setContent(html_cf5e4a392fec1d49f69df7f836b941a4);
+            
+        
+
+        circle_marker_8f3085d0e098a37bb4944a6c1d18c699.bindPopup(popup_238f9b6c36afea3e83984c958e8a5c24)
+        ;
+
+        
+    
+    
+            circle_marker_8f3085d0e098a37bb4944a6c1d18c699.bindTooltip(
+                `<div>
+                     31. základní škola Plzeň, E. Krásnohorské 10, příspěvková organizace, Plzeň, Elišky Krásnohorské: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1a7d9c073ea57b83827693a93cefa46 = L.circleMarker(
+                [49.7774414, 13.3710132],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_bf350e8cf4c5fedfb9bcc18eb5b22ba8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f3b6c456b1e55d0e16137583e6937a5 = $(`<div id="html_4f3b6c456b1e55d0e16137583e6937a5" style="width: 100.0%; height: 100.0%;"><b>34. základní škola Plzeň, Gerská 32, příspěvková organizace, Plzeň, Gerská</b><br>Hodnota: 3</div>`)[0];
+                popup_bf350e8cf4c5fedfb9bcc18eb5b22ba8.setContent(html_4f3b6c456b1e55d0e16137583e6937a5);
+            
+        
+
+        circle_marker_e1a7d9c073ea57b83827693a93cefa46.bindPopup(popup_bf350e8cf4c5fedfb9bcc18eb5b22ba8)
+        ;
+
+        
+    
+    
+            circle_marker_e1a7d9c073ea57b83827693a93cefa46.bindTooltip(
+                `<div>
+                     34. základní škola Plzeň, Gerská 32, příspěvková organizace, Plzeň, Gerská: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16c71667452e9715edb76d34a8259b28 = L.circleMarker(
+                [49.7785751, 13.3621588],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.88888888888889, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_e9ba6245dca7a36645d6278f04e74f5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9aa1683c3a7538c3cd3ab9bf35b7241c = $(`<div id="html_9aa1683c3a7538c3cd3ab9bf35b7241c" style="width: 100.0%; height: 100.0%;"><b>4. základní škola Plzeň, Kralovická 12, příspěvková organizace, Plzeň, Kralovická</b><br>Hodnota: 5</div>`)[0];
+                popup_e9ba6245dca7a36645d6278f04e74f5a.setContent(html_9aa1683c3a7538c3cd3ab9bf35b7241c);
+            
+        
+
+        circle_marker_16c71667452e9715edb76d34a8259b28.bindPopup(popup_e9ba6245dca7a36645d6278f04e74f5a)
+        ;
+
+        
+    
+    
+            circle_marker_16c71667452e9715edb76d34a8259b28.bindTooltip(
+                `<div>
+                     4. základní škola Plzeň, Kralovická 12, příspěvková organizace, Plzeň, Kralovická: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_177ac02713ef8521e74bcad46c61097a = L.circleMarker(
+                [49.7621933, 13.3529196],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_5744a9f026576a828d7115accdc88ebc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79b0340ea5c68a0c48634b24336a8959 = $(`<div id="html_79b0340ea5c68a0c48634b24336a8959" style="width: 100.0%; height: 100.0%;"><b>7. základní škola a mateřská škola Plzeň, Brněnská 36, příspěvková organizace, Plzeň, Brněnská</b><br>Hodnota: 4</div>`)[0];
+                popup_5744a9f026576a828d7115accdc88ebc.setContent(html_79b0340ea5c68a0c48634b24336a8959);
+            
+        
+
+        circle_marker_177ac02713ef8521e74bcad46c61097a.bindPopup(popup_5744a9f026576a828d7115accdc88ebc)
+        ;
+
+        
+    
+    
+            circle_marker_177ac02713ef8521e74bcad46c61097a.bindTooltip(
+                `<div>
+                     7. základní škola a mateřská škola Plzeň, Brněnská 36, příspěvková organizace, Plzeň, Brněnská: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68b47f55af15defeff08c9ed49a55de1 = L.circleMarker(
+                [49.7375587, 13.3798552],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.88888888888889, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_72be5772b1fbdc57696aeda7a3243eae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f08277560d7763d7f081395a503a85f0 = $(`<div id="html_f08277560d7763d7f081395a503a85f0" style="width: 100.0%; height: 100.0%;"><b>Benešova základní škola a mateřská škola Plzeň, Doudlevecká 35, příspěvková organizace, Plzeň, Doudlevecká</b><br>Hodnota: 5</div>`)[0];
+                popup_72be5772b1fbdc57696aeda7a3243eae.setContent(html_f08277560d7763d7f081395a503a85f0);
+            
+        
+
+        circle_marker_68b47f55af15defeff08c9ed49a55de1.bindPopup(popup_72be5772b1fbdc57696aeda7a3243eae)
+        ;
+
+        
+    
+    
+            circle_marker_68b47f55af15defeff08c9ed49a55de1.bindTooltip(
+                `<div>
+                     Benešova základní škola a mateřská škola Plzeň, Doudlevecká 35, příspěvková organizace, Plzeň, Doudlevecká: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43afaed13812d5d18f84f775424c9efe = L.circleMarker(
+                [49.7740349, 13.377008],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_c3ccec0e575a2916219252007554abfa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f53ca031bb4341baa7aa953df1afaa7f = $(`<div id="html_f53ca031bb4341baa7aa953df1afaa7f" style="width: 100.0%; height: 100.0%;"><b>Bolevecká základní škola Plzeň, nám. Odboje 18, příspěvková organizace, Plzeň, náměstí Odboje</b><br>Hodnota: 2</div>`)[0];
+                popup_c3ccec0e575a2916219252007554abfa.setContent(html_f53ca031bb4341baa7aa953df1afaa7f);
+            
+        
+
+        circle_marker_43afaed13812d5d18f84f775424c9efe.bindPopup(popup_c3ccec0e575a2916219252007554abfa)
+        ;
+
+        
+    
+    
+            circle_marker_43afaed13812d5d18f84f775424c9efe.bindTooltip(
+                `<div>
+                     Bolevecká základní škola Plzeň, nám. Odboje 18, příspěvková organizace, Plzeň, náměstí Odboje: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc27c6b625e0c4ec5647c57a6e081f6c = L.circleMarker(
+                [49.7349259, 13.3927603],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_8c51faa3f4b43a84f59772dc812dc3bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87a17308a778b712128d1a0bf4ca8ea2 = $(`<div id="html_87a17308a778b712128d1a0bf4ca8ea2" style="width: 100.0%; height: 100.0%;"><b>Masarykova základní škola Plzeň, Jiráskovo náměstí 10, příspěvková organizace, Plzeň, Jiráskovo náměstí</b><br>Hodnota: 4</div>`)[0];
+                popup_8c51faa3f4b43a84f59772dc812dc3bc.setContent(html_87a17308a778b712128d1a0bf4ca8ea2);
+            
+        
+
+        circle_marker_fc27c6b625e0c4ec5647c57a6e081f6c.bindPopup(popup_8c51faa3f4b43a84f59772dc812dc3bc)
+        ;
+
+        
+    
+    
+            circle_marker_fc27c6b625e0c4ec5647c57a6e081f6c.bindTooltip(
+                `<div>
+                     Masarykova základní škola Plzeň, Jiráskovo náměstí 10, příspěvková organizace, Plzeň, Jiráskovo náměstí: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a2df8eba122b8102cbde6ac164dbc9d = L.circleMarker(
+                [49.4392632, 12.9232595],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_72f73fa818513a0043026ca9a9dcdff5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c890153cedd8f0e5f7d5be9fe9bbab2e = $(`<div id="html_c890153cedd8f0e5f7d5be9fe9bbab2e" style="width: 100.0%; height: 100.0%;"><b>Základní škola a mateřská škola Domažlice, Msgre B. Staška 232, příspěvková organizace, Domažlice, Msgre. B. Staška</b><br>Hodnota: 2</div>`)[0];
+                popup_72f73fa818513a0043026ca9a9dcdff5.setContent(html_c890153cedd8f0e5f7d5be9fe9bbab2e);
+            
+        
+
+        circle_marker_3a2df8eba122b8102cbde6ac164dbc9d.bindPopup(popup_72f73fa818513a0043026ca9a9dcdff5)
+        ;
+
+        
+    
+    
+            circle_marker_3a2df8eba122b8102cbde6ac164dbc9d.bindTooltip(
+                `<div>
+                     Základní škola a mateřská škola Domažlice, Msgre B. Staška 232, příspěvková organizace, Domažlice, Msgre. B. Staška: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67d31b7c06904be05202e821c70acc09 = L.circleMarker(
+                [50.1965012, 14.6789673],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_01ccfeaefea9ce31ef9bee9be20d55d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f24c5551a2b292c4f2a564ca57ba3af = $(`<div id="html_5f24c5551a2b292c4f2a564ca57ba3af" style="width: 100.0%; height: 100.0%;"><b>Základní škola a mateřská škola Mirošov, příspěvková organizace, Mirošov, Školní</b><br>Hodnota: 1</div>`)[0];
+                popup_01ccfeaefea9ce31ef9bee9be20d55d4.setContent(html_5f24c5551a2b292c4f2a564ca57ba3af);
+            
+        
+
+        circle_marker_67d31b7c06904be05202e821c70acc09.bindPopup(popup_01ccfeaefea9ce31ef9bee9be20d55d4)
+        ;
+
+        
+    
+    
+            circle_marker_67d31b7c06904be05202e821c70acc09.bindTooltip(
+                `<div>
+                     Základní škola a mateřská škola Mirošov, příspěvková organizace, Mirošov, Školní: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c808a42532a24686b34f1bd5f90f2b7 = L.circleMarker(
+                [50.1965012, 14.6789673],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.333333333333336, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_d12b5b0c65cd6e6004cfd596c0bfc380 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9e8f42d4028faff75424f7004479dbb = $(`<div id="html_c9e8f42d4028faff75424f7004479dbb" style="width: 100.0%; height: 100.0%;"><b>Základní škola a Mateřská škola Nýřany, příspěvková organizace, Nýřany, Školní</b><br>Hodnota: 7</div>`)[0];
+                popup_d12b5b0c65cd6e6004cfd596c0bfc380.setContent(html_c9e8f42d4028faff75424f7004479dbb);
+            
+        
+
+        circle_marker_0c808a42532a24686b34f1bd5f90f2b7.bindPopup(popup_d12b5b0c65cd6e6004cfd596c0bfc380)
+        ;
+
+        
+    
+    
+            circle_marker_0c808a42532a24686b34f1bd5f90f2b7.bindTooltip(
+                `<div>
+                     Základní škola a Mateřská škola Nýřany, příspěvková organizace, Nýřany, Školní: 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab4ab71855fbee151edcdac3c11713de = L.circleMarker(
+                [49.7785883, 13.5927001],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_8af2215c08e766d174fd8c8920e199ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_528e8c6010c86905610a30791ac1ec07 = $(`<div id="html_528e8c6010c86905610a30791ac1ec07" style="width: 100.0%; height: 100.0%;"><b>Základní škola a Mateřská škola Osek, okres Rokycany, příspěvková organizace, Osek</b><br>Hodnota: 4</div>`)[0];
+                popup_8af2215c08e766d174fd8c8920e199ff.setContent(html_528e8c6010c86905610a30791ac1ec07);
+            
+        
+
+        circle_marker_ab4ab71855fbee151edcdac3c11713de.bindPopup(popup_8af2215c08e766d174fd8c8920e199ff)
+        ;
+
+        
+    
+    
+            circle_marker_ab4ab71855fbee151edcdac3c11713de.bindTooltip(
+                `<div>
+                     Základní škola a Mateřská škola Osek, okres Rokycany, příspěvková organizace, Osek: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bde39eca95d1890c882c004a4276741 = L.circleMarker(
+                [50.3084263, 12.9527788],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_9196bc863b833984b0bee98164c9bc6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ed19330fc08d5e8686e4919c9d866b8 = $(`<div id="html_9ed19330fc08d5e8686e4919c9d866b8" style="width: 100.0%; height: 100.0%;"><b>Základní škola a Mateřská škola Ostrov, Myslbekova 996, příspěvková organizace, Ostrov, Myslbekova</b><br>Hodnota: 1</div>`)[0];
+                popup_9196bc863b833984b0bee98164c9bc6e.setContent(html_9ed19330fc08d5e8686e4919c9d866b8);
+            
+        
+
+        circle_marker_4bde39eca95d1890c882c004a4276741.bindPopup(popup_9196bc863b833984b0bee98164c9bc6e)
+        ;
+
+        
+    
+    
+            circle_marker_4bde39eca95d1890c882c004a4276741.bindTooltip(
+                `<div>
+                     Základní škola a Mateřská škola Ostrov, Myslbekova 996, příspěvková organizace, Ostrov, Myslbekova: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2fdf6fa573c269660209bdb5066012a7 = L.circleMarker(
+                [50.4124655, 14.9027361],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_0e1cab74d3eab6abbded5332c2a90047 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22d5be896dd58e3d4380e8a4b87954b8 = $(`<div id="html_22d5be896dd58e3d4380e8a4b87954b8" style="width: 100.0%; height: 100.0%;"><b>Základní škola a mateřská škola Stod, příspěvková organizace, Stod, Komenského nám.</b><br>Hodnota: 2</div>`)[0];
+                popup_0e1cab74d3eab6abbded5332c2a90047.setContent(html_22d5be896dd58e3d4380e8a4b87954b8);
+            
+        
+
+        circle_marker_2fdf6fa573c269660209bdb5066012a7.bindPopup(popup_0e1cab74d3eab6abbded5332c2a90047)
+        ;
+
+        
+    
+    
+            circle_marker_2fdf6fa573c269660209bdb5066012a7.bindTooltip(
+                `<div>
+                     Základní škola a mateřská škola Stod, příspěvková organizace, Stod, Komenského nám.: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dce8cb4cc2e9a51ffcde08ab354f411d = L.circleMarker(
+                [50.2174152, 12.2024947],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_a7e3d4b437669fdf4675baedee7a2a8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f720a6b46d88e758d4239663d55212f = $(`<div id="html_0f720a6b46d88e758d4239663d55212f" style="width: 100.0%; height: 100.0%;"><b>Základní škola Aš, Hlávkova 26, okres Cheb, Aš, Hlávkova</b><br>Hodnota: 2</div>`)[0];
+                popup_a7e3d4b437669fdf4675baedee7a2a8d.setContent(html_0f720a6b46d88e758d4239663d55212f);
+            
+        
+
+        circle_marker_dce8cb4cc2e9a51ffcde08ab354f411d.bindPopup(popup_a7e3d4b437669fdf4675baedee7a2a8d)
+        ;
+
+        
+    
+    
+            circle_marker_dce8cb4cc2e9a51ffcde08ab354f411d.bindTooltip(
+                `<div>
+                     Základní škola Aš, Hlávkova 26, okres Cheb, Aš, Hlávkova: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_298e307991521da9e99ad62f287c42ff = L.circleMarker(
+                [50.2220922, 12.1914305],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_0ccd9e40392257fd26a1983c99a04bc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b918fb7b3f4579586367cb1763d84e8 = $(`<div id="html_6b918fb7b3f4579586367cb1763d84e8" style="width: 100.0%; height: 100.0%;"><b>Základní škola Aš, Kamenná 152, okres Cheb, Aš, Kamenná</b><br>Hodnota: 3</div>`)[0];
+                popup_0ccd9e40392257fd26a1983c99a04bc3.setContent(html_6b918fb7b3f4579586367cb1763d84e8);
+            
+        
+
+        circle_marker_298e307991521da9e99ad62f287c42ff.bindPopup(popup_0ccd9e40392257fd26a1983c99a04bc3)
+        ;
+
+        
+    
+    
+            circle_marker_298e307991521da9e99ad62f287c42ff.bindTooltip(
+                `<div>
+                     Základní škola Aš, Kamenná 152, okres Cheb, Aš, Kamenná: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0f6d9c16b5fbc9659b72e477dfa9ea1 = L.circleMarker(
+                [49.7459726, 12.8432763],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_c09e63f24ee1625ae74fe92708200eac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56fee671a85bce26871b4836697f6d27 = $(`<div id="html_56fee671a85bce26871b4836697f6d27" style="width: 100.0%; height: 100.0%;"><b>Základní škola Bor, okres Tachov, příspěvková organizace, Bor, Školní</b><br>Hodnota: 2</div>`)[0];
+                popup_c09e63f24ee1625ae74fe92708200eac.setContent(html_56fee671a85bce26871b4836697f6d27);
+            
+        
+
+        circle_marker_b0f6d9c16b5fbc9659b72e477dfa9ea1.bindPopup(popup_c09e63f24ee1625ae74fe92708200eac)
+        ;
+
+        
+    
+    
+            circle_marker_b0f6d9c16b5fbc9659b72e477dfa9ea1.bindTooltip(
+                `<div>
+                     Základní škola Bor, okres Tachov, příspěvková organizace, Bor, Školní: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a099d3b047fb63d87751a90f6e20257 = L.circleMarker(
+                [50.1965012, 14.6789673],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_b9d0ad5bc60d2f7f011cb8fc54a4907d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_141e03724affd96fd3103351ad8588d2 = $(`<div id="html_141e03724affd96fd3103351ad8588d2" style="width: 100.0%; height: 100.0%;"><b>Základní škola generála Pattona Dýšina, příspěvková organizace, Dýšina, Školní</b><br>Hodnota: 1</div>`)[0];
+                popup_b9d0ad5bc60d2f7f011cb8fc54a4907d.setContent(html_141e03724affd96fd3103351ad8588d2);
+            
+        
+
+        circle_marker_2a099d3b047fb63d87751a90f6e20257.bindPopup(popup_b9d0ad5bc60d2f7f011cb8fc54a4907d)
+        ;
+
+        
+    
+    
+            circle_marker_2a099d3b047fb63d87751a90f6e20257.bindTooltip(
+                `<div>
+                     Základní škola generála Pattona Dýšina, příspěvková organizace, Dýšina, Školní: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_319b756b43945d382faf7295cc78d934 = L.circleMarker(
+                [49.7431993, 13.5929648],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_c0c81016afab549d2f6f57e1695407bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eef84aea8cb24b7c2dbeb0721a5dce9d = $(`<div id="html_eef84aea8cb24b7c2dbeb0721a5dce9d" style="width: 100.0%; height: 100.0%;"><b>Základní škola Rokycany, ulice Míru 64, příspěvková organizace, Rokycany, Míru</b><br>Hodnota: 1</div>`)[0];
+                popup_c0c81016afab549d2f6f57e1695407bc.setContent(html_eef84aea8cb24b7c2dbeb0721a5dce9d);
+            
+        
+
+        circle_marker_319b756b43945d382faf7295cc78d934.bindPopup(popup_c0c81016afab549d2f6f57e1695407bc)
+        ;
+
+        
+    
+    
+            circle_marker_319b756b43945d382faf7295cc78d934.bindTooltip(
+                `<div>
+                     Základní škola Rokycany, ulice Míru 64, příspěvková organizace, Rokycany, Míru: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ed560bd5130579512416c9bae2f1c67 = L.circleMarker(
+                [49.7582497, 13.0021742],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_ff79398e6bdbe2370643a05427d6440e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_169309378ccd00fa4819a83c3b95ee03 = $(`<div id="html_169309378ccd00fa4819a83c3b95ee03" style="width: 100.0%; height: 100.0%;"><b>Základní škola Stříbro, Gagarinova 1039, příspěvková organizace, Stříbro, Gagarinova</b><br>Hodnota: 2</div>`)[0];
+                popup_ff79398e6bdbe2370643a05427d6440e.setContent(html_169309378ccd00fa4819a83c3b95ee03);
+            
+        
+
+        circle_marker_9ed560bd5130579512416c9bae2f1c67.bindPopup(popup_ff79398e6bdbe2370643a05427d6440e)
+        ;
+
+        
+    
+    
+            circle_marker_9ed560bd5130579512416c9bae2f1c67.bindTooltip(
+                `<div>
+                     Základní škola Stříbro, Gagarinova 1039, příspěvková organizace, Stříbro, Gagarinova: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2108304d040873e0c8b48c3639569b04 = L.circleMarker(
+                [49.7541327, 13.0054936],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_ecf169668ca28f8ac767fdb1203adcc5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a1b4cfe995d504cff8010dc5822a136 = $(`<div id="html_9a1b4cfe995d504cff8010dc5822a136" style="width: 100.0%; height: 100.0%;"><b>Základní škola Stříbro, Mánesova 485, příspěvková organizace, Stříbro, Mánesova</b><br>Hodnota: 2</div>`)[0];
+                popup_ecf169668ca28f8ac767fdb1203adcc5.setContent(html_9a1b4cfe995d504cff8010dc5822a136);
+            
+        
+
+        circle_marker_2108304d040873e0c8b48c3639569b04.bindPopup(popup_ecf169668ca28f8ac767fdb1203adcc5)
+        ;
+
+        
+    
+    
+            circle_marker_2108304d040873e0c8b48c3639569b04.bindTooltip(
+                `<div>
+                     Základní škola Stříbro, Mánesova 485, příspěvková organizace, Stříbro, Mánesova: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9eea97fd4551417920781be4c5a5537 = L.circleMarker(
+                [49.7992053, 12.6299835],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_8ae01fd5f179f0bd989c8162f0cceb5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95bf5492a987ee910691e6203bc33931 = $(`<div id="html_95bf5492a987ee910691e6203bc33931" style="width: 100.0%; height: 100.0%;"><b>Základní škola Tachov, Hornická 1325, příspěvková organizace, Tachov, Hornická</b><br>Hodnota: 3</div>`)[0];
+                popup_8ae01fd5f179f0bd989c8162f0cceb5a.setContent(html_95bf5492a987ee910691e6203bc33931);
+            
+        
+
+        circle_marker_b9eea97fd4551417920781be4c5a5537.bindPopup(popup_8ae01fd5f179f0bd989c8162f0cceb5a)
+        ;
+
+        
+    
+    
+            circle_marker_b9eea97fd4551417920781be4c5a5537.bindTooltip(
+                `<div>
+                     Základní škola Tachov, Hornická 1325, příspěvková organizace, Tachov, Hornická: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc4cd185639cc86c7c3daf3571eb2e3c = L.circleMarker(
+                [49.7968814, 12.6338442],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a752fd8a8d04d89f389e6843c4bd5f84);
+        
+    
+        var popup_8ec6f5c58ad30e8b810795df9f1a132f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aec6037062706c11a3f18b271cd274c2 = $(`<div id="html_aec6037062706c11a3f18b271cd274c2" style="width: 100.0%; height: 100.0%;"><b>Základní škola Tachov, Kostelní 583, příspěvková organizace, Tachov, Kostelní</b><br>Hodnota: 1</div>`)[0];
+                popup_8ec6f5c58ad30e8b810795df9f1a132f.setContent(html_aec6037062706c11a3f18b271cd274c2);
+            
+        
+
+        circle_marker_bc4cd185639cc86c7c3daf3571eb2e3c.bindPopup(popup_8ec6f5c58ad30e8b810795df9f1a132f)
+        ;
+
+        
+    
+    
+            circle_marker_bc4cd185639cc86c7c3daf3571eb2e3c.bindTooltip(
+                `<div>
+                     Základní škola Tachov, Kostelní 583, příspěvková organizace, Tachov, Kostelní: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
