@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be5e3414605353123bbe37abe61fb4f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be5e3414605353123bbe37abe61fb4f0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be5e3414605353123bbe37abe61fb4f0 = L.map(
+                "map_be5e3414605353123bbe37abe61fb4f0",
+                {
+                    center: [49.8, 15.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_be5e3414605353123bbe37abe61fb4f0);
+
+            
+
+        
+    
+            var tile_layer_9a9dc03e55a5605788bab4807df74c0f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9a9dc03e55a5605788bab4807df74c0f.addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var marker_8748b1b3440f4ad11d331d6d2717055e = L.marker(
+                [49.754478000000006, 13.373259234782608],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_61bfc69ce9d0ddb93d6e2fb1d16b8971 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 24px;\n        text-align: center;\n    \"\u003e86\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_1eb5fd4160d51a6a01f0294eb46fdfa0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69a29c32a67611d8cbb9997b7b4cc1a6 = $(`<div id="html_69a29c32a67611d8cbb9997b7b4cc1a6" style="width: 100.0%; height: 100.0%;"><b>Cluster 1</b><br>Celková hodnota: 86<br>Školy:<br>25. základní škola Plzeň, Chválenická 17, příspěvková organizace, Plzeň, Chválenická: 10<br>15. základní škola Plzeň, Terezie Brzkové 33-35, příspěvková organizace, Plzeň, Terezie Brzkové: 9<br>2. základní škola Plzeň, Schwarzova 20, příspěvková organizace, Plzeň, Schwarzova: 7<br>33. základní škola Plzeň, T. Brzkové 31, příspěvková organizace, Plzeň, Terezie Brzkové: 6<br>Základní škola a Mateřská škola Město Touškov, příspěvková organizace, Město Touškov, Čemínská: 6<br>20. základní škola Plzeň, Brojova 13, příspěvková organizace, Plzeň, Brojova: 5<br>Benešova základní škola a mateřská škola Plzeň, Doudlevecká 35, příspěvková organizace, Plzeň, Doudlevecká: 4<br>14. základní škola Plzeň, Zábělská 25, příspěvková organizace, Plzeň, Zábělská: 4<br>Základní škola Štěnovice, okres Plzeň-jih, Štěnovice, Čižická: 4<br>Základní škola, Nezvěstice 69, 332 04 Nezvěstice: 4<br>21. základní škola Plzeň, Slovanská alej 13, příspěvková organizace, Plzeň, Slovanská alej: 3<br>13. základní škola Plzeň, Habrmannova 45, příspěvková organizace, Plzeň, Habrmannova: 3<br>ZÁKLADNÍ ŠKOLA MARTINA LUTHERA, s.r.o., Plzeň, Školní náměstí: 3<br>Základní škola a Mateřská škola Pernarec, okres Plzeň-sever, příspěvková organizace, Pernarec: 3<br>4. základní škola Plzeň, Kralovická 12, příspěvková organizace, Plzeň, Kralovická: 2<br>Základní škola a Mateřská škola Všeruby, příspěvková organizace, Všeruby: 2<br>Základní škola a Mateřská škola Chotíkov, příspěvková organizace, Chotíkov: 2<br>Základní škola a mateřská škola Stupno, příspěvková organizace, Břasy: 2<br>10. základní škola, náměstí Míru 2442/6, 301 00 Plzeň-Jižní Předměstí: 2<br>ZŠ a MŠ pro sluchově postižené, Mohylová 1200/90, 312 00 Plzeň-Doubravka: 2<br>17. základní škola a mateřská škola Plzeň, Malická 1, příspěvková organizace, Plzeň, Malická: 1<br>34. základní škola Plzeň, Gerská 32, příspěvková organizace, Plzeň, Gerská: 1<br>Základní škola, nám. Čsl. legií 26, 330 03 Chrást: 1</div>`)[0];
+                popup_1eb5fd4160d51a6a01f0294eb46fdfa0.setContent(html_69a29c32a67611d8cbb9997b7b4cc1a6);
+            
+        
+
+        marker_8748b1b3440f4ad11d331d6d2717055e.bindPopup(popup_1eb5fd4160d51a6a01f0294eb46fdfa0)
+        ;
+
+        
+    
+    
+            marker_8748b1b3440f4ad11d331d6d2717055e.bindTooltip(
+                `<div>
+                     Cluster 1: 86
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8748b1b3440f4ad11d331d6d2717055e.setIcon(div_icon_61bfc69ce9d0ddb93d6e2fb1d16b8971);
+            
+    
+            var marker_657fc9b0c910e524b37169ac49ac631b = L.marker(
+                [49.5579898, 17.734959],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_db0f96eead50e97a19876e262e30fc5e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 22px;\n        height: 22px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 9px;\n        text-align: center;\n    \"\u003e7\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_e581c04e8df6e058f88d89f566cd7750 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32b5012177a715778ca076130bc43c76 = $(`<div id="html_32b5012177a715778ca076130bc43c76" style="width: 100.0%; height: 100.0%;"><b>Cluster 2</b><br>Celková hodnota: 7<br>Školy:<br>Základní škola Dobřany, příspěvková organizace, Dobřany, tř. 1. máje: 7</div>`)[0];
+                popup_e581c04e8df6e058f88d89f566cd7750.setContent(html_32b5012177a715778ca076130bc43c76);
+            
+        
+
+        marker_657fc9b0c910e524b37169ac49ac631b.bindPopup(popup_e581c04e8df6e058f88d89f566cd7750)
+        ;
+
+        
+    
+    
+            marker_657fc9b0c910e524b37169ac49ac631b.bindTooltip(
+                `<div>
+                     Cluster 2: 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_657fc9b0c910e524b37169ac49ac631b.setIcon(div_icon_db0f96eead50e97a19876e262e30fc5e);
+            
+    
+            var marker_e3c1ef725a8ed85bd79ce32beab442ac = L.marker(
+                [49.9666521, 12.5357831],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_236857707757bf09a936fc6112fce369 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 22px;\n        height: 22px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 9px;\n        text-align: center;\n    \"\u003e7\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_d392518cd4db6fc29c60cae504a5c110 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1378f9d42e7e138ad3f279adc44e55e1 = $(`<div id="html_1378f9d42e7e138ad3f279adc44e55e1" style="width: 100.0%; height: 100.0%;"><b>Cluster 3</b><br>Celková hodnota: 7<br>Školy:<br>1. základní škola Plzeň, Západní 18, příspěvková organizace, Plzeň, Západní: 7</div>`)[0];
+                popup_d392518cd4db6fc29c60cae504a5c110.setContent(html_1378f9d42e7e138ad3f279adc44e55e1);
+            
+        
+
+        marker_e3c1ef725a8ed85bd79ce32beab442ac.bindPopup(popup_d392518cd4db6fc29c60cae504a5c110)
+        ;
+
+        
+    
+    
+            marker_e3c1ef725a8ed85bd79ce32beab442ac.bindTooltip(
+                `<div>
+                     Cluster 3: 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3c1ef725a8ed85bd79ce32beab442ac.setIcon(div_icon_236857707757bf09a936fc6112fce369);
+            
+    
+            var marker_bb785dc62efb3beba0c853586acb6dc0 = L.marker(
+                [50.057544492307684, 14.414275215384615],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_e768cf5efac63e0b4f7351ada1e518d9 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 31px;\n        height: 31px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 12px;\n        text-align: center;\n    \"\u003e25\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_a7546872e18a3dae75ee1313bdcfd934 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8be44f0bcad07393fb4f9b087546733f = $(`<div id="html_8be44f0bcad07393fb4f9b087546733f" style="width: 100.0%; height: 100.0%;"><b>Cluster 4</b><br>Celková hodnota: 25<br>Školy:<br>Základní škola Blovice, okres Plzeň-jih, Blovice, Družstevní: 6<br>Masarykova základní škola Plzeň, Jiráskovo náměstí 10, příspěvková organizace, Plzeň, Jiráskovo náměstí: 3<br>Základní škola Třemošná, okres Plzeň-sever, příspěvková organizace, Třemošná, Americká: 3<br>Soukromá základní škola ELEMENTÁRIA, s.r.o., Plzeň, Jesenická: 2<br>Základní škola T. G. Masaryka Rokycany, příspěvková organizace, Rokycany, Třebízského: 2<br>11. základní škola Plzeň, Baarova 31, příspěvková organizace, Plzeň, Baarova: 2<br>31. základní škola Plzeň, E. Krásnohorské 10, příspěvková organizace, Plzeň, Elišky Krásnohorské: 1<br>26. základní škola Plzeň, Skupova 22, příspěvková organizace, Plzeň, Skupova: 1<br>Základní škola Klatovy, Plánická ul. 194, Klatovy, Plánická: 1<br>Základní škola Stříbro, Mánesova 485, příspěvková organizace, Stříbro, Mánesova: 1<br>Základní škola Zbůch, okres Plzeň-sever, příspěvková organizace, Zbůch, Hornická: 1<br>Základní škola Klatovy, Plánická ul. 194, Klatovy, Plánická: 1<br>Základní škola, Plzeňská 326, 338 05 Mýto: 1</div>`)[0];
+                popup_a7546872e18a3dae75ee1313bdcfd934.setContent(html_8be44f0bcad07393fb4f9b087546733f);
+            
+        
+
+        marker_bb785dc62efb3beba0c853586acb6dc0.bindPopup(popup_a7546872e18a3dae75ee1313bdcfd934)
+        ;
+
+        
+    
+    
+            marker_bb785dc62efb3beba0c853586acb6dc0.bindTooltip(
+                `<div>
+                     Cluster 4: 25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb785dc62efb3beba0c853586acb6dc0.setIcon(div_icon_e768cf5efac63e0b4f7351ada1e518d9);
+            
+    
+            var marker_4ee725e962101c4f8e975045eb712625 = L.marker(
+                [49.7982397, 18.2536135],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_5975b94e62f7a364c66d246828fa1ebf = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 21px;\n        height: 21px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e4\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_b30e39786d958394ea129585839eb16e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3494e3c164da2f8b520ca2acec43e1cd = $(`<div id="html_3494e3c164da2f8b520ca2acec43e1cd" style="width: 100.0%; height: 100.0%;"><b>Cluster 5</b><br>Celková hodnota: 4<br>Školy:<br>28. základní škola Plzeň, Rodinná 39, příspěvková organizace, Plzeň, Rodinná: 4</div>`)[0];
+                popup_b30e39786d958394ea129585839eb16e.setContent(html_3494e3c164da2f8b520ca2acec43e1cd);
+            
+        
+
+        marker_4ee725e962101c4f8e975045eb712625.bindPopup(popup_b30e39786d958394ea129585839eb16e)
+        ;
+
+        
+    
+    
+            marker_4ee725e962101c4f8e975045eb712625.bindTooltip(
+                `<div>
+                     Cluster 5: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ee725e962101c4f8e975045eb712625.setIcon(div_icon_5975b94e62f7a364c66d246828fa1ebf);
+            
+    
+            var marker_167c5bf8022f2f1e9001759da16ad59d = L.marker(
+                [49.7166532, 16.2654072],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_dec506d9d0c8c8b314010fc6d794df09 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e3\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_b4dec378199deca5d984fe83f3613d73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e76c48a9d84abab024fa07e780d50b2 = $(`<div id="html_7e76c48a9d84abab024fa07e780d50b2" style="width: 100.0%; height: 100.0%;"><b>Cluster 6</b><br>Celková hodnota: 3<br>Školy:<br>Základní škola Josefa Hlávky Přeštice, Přeštice, Na Jordáně: 3</div>`)[0];
+                popup_b4dec378199deca5d984fe83f3613d73.setContent(html_7e76c48a9d84abab024fa07e780d50b2);
+            
+        
+
+        marker_167c5bf8022f2f1e9001759da16ad59d.bindPopup(popup_b4dec378199deca5d984fe83f3613d73)
+        ;
+
+        
+    
+    
+            marker_167c5bf8022f2f1e9001759da16ad59d.bindTooltip(
+                `<div>
+                     Cluster 6: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_167c5bf8022f2f1e9001759da16ad59d.setIcon(div_icon_dec506d9d0c8c8b314010fc6d794df09);
+            
+    
+            var marker_113c80c96ed68b96153d1ecb55164433 = L.marker(
+                [49.330893, 14.2050106],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_f16d0bd21c6422380e6418b37c3d4d85 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e3\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_e225d265c4baba931f8f730864c821fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a744b58d656da819d8f70fe712d8505 = $(`<div id="html_9a744b58d656da819d8f70fe712d8505" style="width: 100.0%; height: 100.0%;"><b>Cluster 7</b><br>Celková hodnota: 3<br>Školy:<br>22. základní škola Plzeň, Na Dlouhých 49, příspěvková organizace, Plzeň, Na Dlouhých: 3</div>`)[0];
+                popup_e225d265c4baba931f8f730864c821fe.setContent(html_9a744b58d656da819d8f70fe712d8505);
+            
+        
+
+        marker_113c80c96ed68b96153d1ecb55164433.bindPopup(popup_e225d265c4baba931f8f730864c821fe)
+        ;
+
+        
+    
+    
+            marker_113c80c96ed68b96153d1ecb55164433.bindTooltip(
+                `<div>
+                     Cluster 7: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_113c80c96ed68b96153d1ecb55164433.setIcon(div_icon_f16d0bd21c6422380e6418b37c3d4d85);
+            
+    
+            var marker_acae7a8dddb2db5d054e0bf513be8480 = L.marker(
+                [49.0039344, 14.7710662],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_5e7f51f406d4ead87c96571df26a5db7 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e3\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_bbd13733ad5f2f5926bf52cebbbdd4d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7913a5ce270a1ebee9aede4f5a7cd4a7 = $(`<div id="html_7913a5ce270a1ebee9aede4f5a7cd4a7" style="width: 100.0%; height: 100.0%;"><b>Cluster 8</b><br>Celková hodnota: 3<br>Školy:<br>Základní škola Starý Plzenec, příspěvková organizace, Starý Plzenec, Masarykovo náměstí: 3</div>`)[0];
+                popup_bbd13733ad5f2f5926bf52cebbbdd4d4.setContent(html_7913a5ce270a1ebee9aede4f5a7cd4a7);
+            
+        
+
+        marker_acae7a8dddb2db5d054e0bf513be8480.bindPopup(popup_bbd13733ad5f2f5926bf52cebbbdd4d4)
+        ;
+
+        
+    
+    
+            marker_acae7a8dddb2db5d054e0bf513be8480.bindTooltip(
+                `<div>
+                     Cluster 8: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_acae7a8dddb2db5d054e0bf513be8480.setIcon(div_icon_5e7f51f406d4ead87c96571df26a5db7);
+            
+    
+            var marker_0ed5ccf7fbff9f5c837e78c29d629a62 = L.marker(
+                [49.8965276, 13.3812953],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_da0185e9aad177bd1e501783c3235ca3 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e3\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_ca5e0715ab42a8484329dac945ac7380 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98df09bf839e96c0fa22f7e2e14b94b2 = $(`<div id="html_98df09bf839e96c0fa22f7e2e14b94b2" style="width: 100.0%; height: 100.0%;"><b>Cluster 9</b><br>Celková hodnota: 3<br>Školy:<br>Základní škola a Mateřská škola Radnice, příspěvková organizace, Radnice, Sídliště: 3</div>`)[0];
+                popup_ca5e0715ab42a8484329dac945ac7380.setContent(html_98df09bf839e96c0fa22f7e2e14b94b2);
+            
+        
+
+        marker_0ed5ccf7fbff9f5c837e78c29d629a62.bindPopup(popup_ca5e0715ab42a8484329dac945ac7380)
+        ;
+
+        
+    
+    
+            marker_0ed5ccf7fbff9f5c837e78c29d629a62.bindTooltip(
+                `<div>
+                     Cluster 9: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ed5ccf7fbff9f5c837e78c29d629a62.setIcon(div_icon_da0185e9aad177bd1e501783c3235ca3);
+            
+    
+            var marker_e47d167626b5a24b8aaa2ad5648354a9 = L.marker(
+                [50.0895078, 12.360467966666667],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_0aa29c051a49e7d4904642853e3d9f01 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 21px;\n        height: 21px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e5\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_21bbf5e85431636bbee5962cdb08ec61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bba345b112fb35105f0fa9beccc23e0b = $(`<div id="html_bba345b112fb35105f0fa9beccc23e0b" style="width: 100.0%; height: 100.0%;"><b>Cluster 10</b><br>Celková hodnota: 5<br>Školy:<br>Základní škola, Česká 39/1, 351 01 Františkovy Lázně-Dolní Lomany: 3<br>4. základní škola Cheb, Hradební 52/14, 350 02 Cheb: 1<br>5. základní škola Cheb, Matěje Kopeckého 1160/1, 350 02 Cheb: 1</div>`)[0];
+                popup_21bbf5e85431636bbee5962cdb08ec61.setContent(html_bba345b112fb35105f0fa9beccc23e0b);
+            
+        
+
+        marker_e47d167626b5a24b8aaa2ad5648354a9.bindPopup(popup_21bbf5e85431636bbee5962cdb08ec61)
+        ;
+
+        
+    
+    
+            marker_e47d167626b5a24b8aaa2ad5648354a9.bindTooltip(
+                `<div>
+                     Cluster 10: 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e47d167626b5a24b8aaa2ad5648354a9.setIcon(div_icon_0aa29c051a49e7d4904642853e3d9f01);
+            
+    
+            var marker_8ce994a7edb04c5910461aabf4b48ed5 = L.marker(
+                [49.9354813, 17.9463625],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_73a587d7516b46351faae1a2385cb203 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e3\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_e7a13d5a177fa22d0b053782d38aa4ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5e51b3bfb566e5978d591368f6145f0 = $(`<div id="html_f5e51b3bfb566e5978d591368f6145f0" style="width: 100.0%; height: 100.0%;"><b>Cluster 11</b><br>Celková hodnota: 3<br>Školy:<br>Základní škola, Školní 479, 331 51 Kaznějov: 3</div>`)[0];
+                popup_e7a13d5a177fa22d0b053782d38aa4ec.setContent(html_f5e51b3bfb566e5978d591368f6145f0);
+            
+        
+
+        marker_8ce994a7edb04c5910461aabf4b48ed5.bindPopup(popup_e7a13d5a177fa22d0b053782d38aa4ec)
+        ;
+
+        
+    
+    
+            marker_8ce994a7edb04c5910461aabf4b48ed5.bindTooltip(
+                `<div>
+                     Cluster 11: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ce994a7edb04c5910461aabf4b48ed5.setIcon(div_icon_73a587d7516b46351faae1a2385cb203);
+            
+    
+            var marker_7b36f87512e2a50180e2579e8adb1ddd = L.marker(
+                [49.1480041, 15.0094075],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_179b998da6070ae8c3f133c56de79cad = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 21px;\n        height: 21px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e4\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_fef72ae9d9ab4ad4d63e6e7c89a69267 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_840a96fd151cbef96417164555cf16a2 = $(`<div id="html_840a96fd151cbef96417164555cf16a2" style="width: 100.0%; height: 100.0%;"><b>Cluster 12</b><br>Celková hodnota: 4<br>Školy:<br>Základní škola a Mateřská škola Nýřany, příspěvková organizace, Nýřany, Školní: 2<br>Masarykova základní škola Zruč-Senec, okres Plzeň-sever, příspěvková organizace, Zruč-Senec, Školní: 1<br>Základní škola Nepomuk, okres Plzeň-jih, Nepomuk, Školní: 1</div>`)[0];
+                popup_fef72ae9d9ab4ad4d63e6e7c89a69267.setContent(html_840a96fd151cbef96417164555cf16a2);
+            
+        
+
+        marker_7b36f87512e2a50180e2579e8adb1ddd.bindPopup(popup_fef72ae9d9ab4ad4d63e6e7c89a69267)
+        ;
+
+        
+    
+    
+            marker_7b36f87512e2a50180e2579e8adb1ddd.bindTooltip(
+                `<div>
+                     Cluster 12: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7b36f87512e2a50180e2579e8adb1ddd.setIcon(div_icon_179b998da6070ae8c3f133c56de79cad);
+            
+    
+            var marker_d96111bf6fa5b74af304b7f7b5f717be = L.marker(
+                [49.212489950000005, 15.9361765],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_f17f7ddb74bbba6c456afaaee8b9017d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 21px;\n        height: 21px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e4\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_aa90fba59c698f04cf59f231dd401157 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee6d511abcbf5d641b8aa63a07ff95c2 = $(`<div id="html_ee6d511abcbf5d641b8aa63a07ff95c2" style="width: 100.0%; height: 100.0%;"><b>Cluster 13</b><br>Celková hodnota: 4<br>Školy:<br>7. základní škola a mateřská škola Plzeň, Brněnská 36, příspěvková organizace, Plzeň, Brněnská: 2<br>Základní škola a mateřská škola Stod, příspěvková organizace, Stod, Komenského nám.: 2</div>`)[0];
+                popup_aa90fba59c698f04cf59f231dd401157.setContent(html_ee6d511abcbf5d641b8aa63a07ff95c2);
+            
+        
+
+        marker_d96111bf6fa5b74af304b7f7b5f717be.bindPopup(popup_aa90fba59c698f04cf59f231dd401157)
+        ;
+
+        
+    
+    
+            marker_d96111bf6fa5b74af304b7f7b5f717be.bindTooltip(
+                `<div>
+                     Cluster 13: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d96111bf6fa5b74af304b7f7b5f717be.setIcon(div_icon_f17f7ddb74bbba6c456afaaee8b9017d);
+            
+    
+            var marker_0ac5ed360adc5588b5afb05a4ac585db = L.marker(
+                [49.5914947, 13.1037416],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_0a634b522c2760aa208cc141a4e42549 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 21px;\n        height: 21px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e4\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_828c9c1b7593e1aa31835da2ea01223d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f23b333c281732e541153bab8536d20 = $(`<div id="html_4f23b333c281732e541153bab8536d20" style="width: 100.0%; height: 100.0%;"><b>Cluster 14</b><br>Celková hodnota: 4<br>Školy:<br>Základní škola Holýšov, příspěvková organizace, Holýšov, Táborová: 2<br>Základní škola Holýšov, příspěvková organizace, Holýšov, Táborová: 2</div>`)[0];
+                popup_828c9c1b7593e1aa31835da2ea01223d.setContent(html_4f23b333c281732e541153bab8536d20);
+            
+        
+
+        marker_0ac5ed360adc5588b5afb05a4ac585db.bindPopup(popup_828c9c1b7593e1aa31835da2ea01223d)
+        ;
+
+        
+    
+    
+            marker_0ac5ed360adc5588b5afb05a4ac585db.bindTooltip(
+                `<div>
+                     Cluster 14: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ac5ed360adc5588b5afb05a4ac585db.setIcon(div_icon_0a634b522c2760aa208cc141a4e42549);
+            
+    
+            var marker_6f3cc7e1a0282b2d543cabf8fa6a07cd = L.marker(
+                [49.9623644, 14.068757],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_876b287cf23c8cb4f83740d6bec2350d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e2\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_26e1216013c4f1fe77c16d23d08ed6da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_629949bde2cbf9925afa9e5b05e781ac = $(`<div id="html_629949bde2cbf9925afa9e5b05e781ac" style="width: 100.0%; height: 100.0%;"><b>Cluster 15</b><br>Celková hodnota: 2<br>Školy:<br>Jungmannova základní škola, Plzeňská 30/14, 266 01 Beroun-Město: 2</div>`)[0];
+                popup_26e1216013c4f1fe77c16d23d08ed6da.setContent(html_629949bde2cbf9925afa9e5b05e781ac);
+            
+        
+
+        marker_6f3cc7e1a0282b2d543cabf8fa6a07cd.bindPopup(popup_26e1216013c4f1fe77c16d23d08ed6da)
+        ;
+
+        
+    
+    
+            marker_6f3cc7e1a0282b2d543cabf8fa6a07cd.bindTooltip(
+                `<div>
+                     Cluster 15: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6f3cc7e1a0282b2d543cabf8fa6a07cd.setIcon(div_icon_876b287cf23c8cb4f83740d6bec2350d);
+            
+    
+            var marker_1e9e5deaba76618be0d2f149e33ef483 = L.marker(
+                [49.8084501, 13.8565588],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_13642a7974e2324a00ecb9dfd3c590ba = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e2\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_752a0fef8798296e5e037554f87d5e62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e57ebb30bb7a792468a044e0fa62a0c3 = $(`<div id="html_e57ebb30bb7a792468a044e0fa62a0c3" style="width: 100.0%; height: 100.0%;"><b>Cluster 16</b><br>Celková hodnota: 2<br>Školy:<br>Základní škola T. G. Masaryka, Sokolovická 260, 267 62 Komárov: 2</div>`)[0];
+                popup_752a0fef8798296e5e037554f87d5e62.setContent(html_e57ebb30bb7a792468a044e0fa62a0c3);
+            
+        
+
+        marker_1e9e5deaba76618be0d2f149e33ef483.bindPopup(popup_752a0fef8798296e5e037554f87d5e62)
+        ;
+
+        
+    
+    
+            marker_1e9e5deaba76618be0d2f149e33ef483.bindTooltip(
+                `<div>
+                     Cluster 16: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e9e5deaba76618be0d2f149e33ef483.setIcon(div_icon_13642a7974e2324a00ecb9dfd3c590ba);
+            
+    
+            var marker_1f44445e4b09774a875840c28a9aa1aa = L.marker(
+                [50.1188587, 12.5332361],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_b8df5bb29599a95dd6685edbb0f5975d = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e2\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_b6ab33f1aeab37da5e67e4db5b2a6f14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0434cc0bf471c69baa70eeebcf43e88a = $(`<div id="html_0434cc0bf471c69baa70eeebcf43e88a" style="width: 100.0%; height: 100.0%;"><b>Cluster 17</b><br>Celková hodnota: 2<br>Školy:<br>Základní škola, Jana A. Komenského 540/7, 357 51 Kynšperk nad Ohří: 2</div>`)[0];
+                popup_b6ab33f1aeab37da5e67e4db5b2a6f14.setContent(html_0434cc0bf471c69baa70eeebcf43e88a);
+            
+        
+
+        marker_1f44445e4b09774a875840c28a9aa1aa.bindPopup(popup_b6ab33f1aeab37da5e67e4db5b2a6f14)
+        ;
+
+        
+    
+    
+            marker_1f44445e4b09774a875840c28a9aa1aa.bindTooltip(
+                `<div>
+                     Cluster 17: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f44445e4b09774a875840c28a9aa1aa.setIcon(div_icon_b8df5bb29599a95dd6685edbb0f5975d);
+            
+    
+            var marker_894d8634a06c47d063936044892900ab = L.marker(
+                [49.4534443, 17.4150257],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_c684fce5b5d0266fa1125226b615985e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e2\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_5f5e0fa56323d6db9acb3740600e025d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6aef75f1046386ba2b07aab6c469b185 = $(`<div id="html_6aef75f1046386ba2b07aab6c469b185" style="width: 100.0%; height: 100.0%;"><b>Cluster 18</b><br>Celková hodnota: 2<br>Školy:<br>Základní škola, Mateřská škola a ZUŠ, Školní 183, 349 53 Bezdružice: 2</div>`)[0];
+                popup_5f5e0fa56323d6db9acb3740600e025d.setContent(html_6aef75f1046386ba2b07aab6c469b185);
+            
+        
+
+        marker_894d8634a06c47d063936044892900ab.bindPopup(popup_5f5e0fa56323d6db9acb3740600e025d)
+        ;
+
+        
+    
+    
+            marker_894d8634a06c47d063936044892900ab.bindTooltip(
+                `<div>
+                     Cluster 18: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_894d8634a06c47d063936044892900ab.setIcon(div_icon_c684fce5b5d0266fa1125226b615985e);
+            
+    
+            var marker_98ed58ea88ee616e76c0f9546b9de15f = L.marker(
+                [49.7086481, 13.6472004],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_07547fa61980295d167f8698dc03c31b = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_6d320a77e2b6a9c484558027342973b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7ace385243ca44c7e6de608f7e25423 = $(`<div id="html_e7ace385243ca44c7e6de608f7e25423" style="width: 100.0%; height: 100.0%;"><b>Cluster 19</b><br>Celková hodnota: 1<br>Školy:<br>Základní škola a Mateřská škola Hrádek, okres Rokycany, Hrádek, Chylická: 1</div>`)[0];
+                popup_6d320a77e2b6a9c484558027342973b4.setContent(html_e7ace385243ca44c7e6de608f7e25423);
+            
+        
+
+        marker_98ed58ea88ee616e76c0f9546b9de15f.bindPopup(popup_6d320a77e2b6a9c484558027342973b4)
+        ;
+
+        
+    
+    
+            marker_98ed58ea88ee616e76c0f9546b9de15f.bindTooltip(
+                `<div>
+                     Cluster 19: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98ed58ea88ee616e76c0f9546b9de15f.setIcon(div_icon_07547fa61980295d167f8698dc03c31b);
+            
+    
+            var marker_68d97d61b63b8a54ce3cd805cf3c6f68 = L.marker(
+                [48.9777387, 14.4663713],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_10773ee50e70957eebb825103ca94a39 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_14bc9eb4fa7d16375a2d51480d8117b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b732401e588111381a457fd973b92f8 = $(`<div id="html_6b732401e588111381a457fd973b92f8" style="width: 100.0%; height: 100.0%;"><b>Cluster 20</b><br>Celková hodnota: 1<br>Školy:<br>Waldorfská základní škola a střední škola Dobromysl z.ú., Plzeň, Husova: 1</div>`)[0];
+                popup_14bc9eb4fa7d16375a2d51480d8117b6.setContent(html_6b732401e588111381a457fd973b92f8);
+            
+        
+
+        marker_68d97d61b63b8a54ce3cd805cf3c6f68.bindPopup(popup_14bc9eb4fa7d16375a2d51480d8117b6)
+        ;
+
+        
+    
+    
+            marker_68d97d61b63b8a54ce3cd805cf3c6f68.bindTooltip(
+                `<div>
+                     Cluster 20: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_68d97d61b63b8a54ce3cd805cf3c6f68.setIcon(div_icon_10773ee50e70957eebb825103ca94a39);
+            
+    
+            var marker_9102f1e08a3d50d2c4205837bf5ec55c = L.marker(
+                [49.1061191, 14.3124031],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_344e7bf8fa375179a18fdc79d7cd8c7e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_7c6df138518c71b82d72510e7f22142e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c8b39a8fc83ed842b7df189b802823f = $(`<div id="html_1c8b39a8fc83ed842b7df189b802823f" style="width: 100.0%; height: 100.0%;"><b>Cluster 21</b><br>Celková hodnota: 1<br>Školy:<br>Základní škola Marie Uchytilové Kralovice, Kralovice, Nová: 1</div>`)[0];
+                popup_7c6df138518c71b82d72510e7f22142e.setContent(html_1c8b39a8fc83ed842b7df189b802823f);
+            
+        
+
+        marker_9102f1e08a3d50d2c4205837bf5ec55c.bindPopup(popup_7c6df138518c71b82d72510e7f22142e)
+        ;
+
+        
+    
+    
+            marker_9102f1e08a3d50d2c4205837bf5ec55c.bindTooltip(
+                `<div>
+                     Cluster 21: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9102f1e08a3d50d2c4205837bf5ec55c.setIcon(div_icon_344e7bf8fa375179a18fdc79d7cd8c7e);
+            
+    
+            var marker_d7532f41755251b922c6db9b2e5b2406 = L.marker(
+                [50.3119056, 12.8695434],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_481f819fae2c7235528d69182c5bdd31 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_5f7ea1427ba9a92d5059ef105a687b4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6cf084132cc9e8914b161d73b30ecd7 = $(`<div id="html_b6cf084132cc9e8914b161d73b30ecd7" style="width: 100.0%; height: 100.0%;"><b>Cluster 22</b><br>Celková hodnota: 1<br>Školy:<br>Základní škola, Sídliště 321, 267 53 Žebrák: 1</div>`)[0];
+                popup_5f7ea1427ba9a92d5059ef105a687b4d.setContent(html_b6cf084132cc9e8914b161d73b30ecd7);
+            
+        
+
+        marker_d7532f41755251b922c6db9b2e5b2406.bindPopup(popup_5f7ea1427ba9a92d5059ef105a687b4d)
+        ;
+
+        
+    
+    
+            marker_d7532f41755251b922c6db9b2e5b2406.bindTooltip(
+                `<div>
+                     Cluster 22: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7532f41755251b922c6db9b2e5b2406.setIcon(div_icon_481f819fae2c7235528d69182c5bdd31);
+            
+    
+            var marker_d2b99457f452ee553fd3ed9e2e9b1544 = L.marker(
+                [50.0876525, 13.1589396],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_37738b02cf32ae78f5c7fce3350d594a = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_c92b964b39ac7e65d3e6954777638099 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6abd4fced48728bebe7b606e697478aa = $(`<div id="html_6abd4fced48728bebe7b606e697478aa" style="width: 100.0%; height: 100.0%;"><b>Cluster 23</b><br>Celková hodnota: 1<br>Školy:<br>Základní škola a ZUŠ Žlutice, přísp.org., Poděbradova 307, 364 52 Žlutice: 1</div>`)[0];
+                popup_c92b964b39ac7e65d3e6954777638099.setContent(html_6abd4fced48728bebe7b606e697478aa);
+            
+        
+
+        marker_d2b99457f452ee553fd3ed9e2e9b1544.bindPopup(popup_c92b964b39ac7e65d3e6954777638099)
+        ;
+
+        
+    
+    
+            marker_d2b99457f452ee553fd3ed9e2e9b1544.bindTooltip(
+                `<div>
+                     Cluster 23: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2b99457f452ee553fd3ed9e2e9b1544.setIcon(div_icon_37738b02cf32ae78f5c7fce3350d594a);
+            
+    
+            var marker_6f3ab94af8fa2314cd8b4c2ccb235726 = L.marker(
+                [49.5239118, 15.9061921],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_d65b7d8d7825f26bcffcd4cd688c3f8c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_dd0d759d3e4770bd3f711d743da44bb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_686cea6209d625bb0ad6b26f69d60803 = $(`<div id="html_686cea6209d625bb0ad6b26f69d60803" style="width: 100.0%; height: 100.0%;"><b>Cluster 24</b><br>Celková hodnota: 1<br>Školy:<br>Základní škola, Sportovní 307, 345 43 Koloveč: 1</div>`)[0];
+                popup_dd0d759d3e4770bd3f711d743da44bb4.setContent(html_686cea6209d625bb0ad6b26f69d60803);
+            
+        
+
+        marker_6f3ab94af8fa2314cd8b4c2ccb235726.bindPopup(popup_dd0d759d3e4770bd3f711d743da44bb4)
+        ;
+
+        
+    
+    
+            marker_6f3ab94af8fa2314cd8b4c2ccb235726.bindTooltip(
+                `<div>
+                     Cluster 24: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6f3ab94af8fa2314cd8b4c2ccb235726.setIcon(div_icon_d65b7d8d7825f26bcffcd4cd688c3f8c);
+            
+    
+            var marker_a89a0f0f14af4e860140ce5c9745d6b4 = L.marker(
+                [49.6780978, 13.2258634],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_777b7c9db10039411ffdf006f43efc4c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_baf842ed91ca36cab45c329a36841d5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86f7397e5f1277984ba6920814307ba1 = $(`<div id="html_86f7397e5f1277984ba6920814307ba1" style="width: 100.0%; height: 100.0%;"><b>Cluster 25</b><br>Celková hodnota: 1<br>Školy:<br>Základní škola, Plzeňská 388, 332 14 Chotěšov: 1</div>`)[0];
+                popup_baf842ed91ca36cab45c329a36841d5b.setContent(html_86f7397e5f1277984ba6920814307ba1);
+            
+        
+
+        marker_a89a0f0f14af4e860140ce5c9745d6b4.bindPopup(popup_baf842ed91ca36cab45c329a36841d5b)
+        ;
+
+        
+    
+    
+            marker_a89a0f0f14af4e860140ce5c9745d6b4.bindTooltip(
+                `<div>
+                     Cluster 25: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a89a0f0f14af4e860140ce5c9745d6b4.setIcon(div_icon_777b7c9db10039411ffdf006f43efc4c);
+            
+    
+            var marker_2aa97bf9ea0247f98fac1858b03f5f39 = L.marker(
+                [49.4372209, 12.8175323],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_a553c37d17139ecab6a4205c5d7f900c = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_2b8a07147703d5c8e2e3c76f4eb2be9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fda96e3637dbad09749f11310b284cb3 = $(`<div id="html_fda96e3637dbad09749f11310b284cb3" style="width: 100.0%; height: 100.0%;"><b>Cluster 26</b><br>Celková hodnota: 1<br>Školy:<br>Masarykova základní škola a MŠ, Klenčí pod Čerchovem 207, 345 34 Klenčí pod Čerchovem: 1</div>`)[0];
+                popup_2b8a07147703d5c8e2e3c76f4eb2be9b.setContent(html_fda96e3637dbad09749f11310b284cb3);
+            
+        
+
+        marker_2aa97bf9ea0247f98fac1858b03f5f39.bindPopup(popup_2b8a07147703d5c8e2e3c76f4eb2be9b)
+        ;
+
+        
+    
+    
+            marker_2aa97bf9ea0247f98fac1858b03f5f39.bindTooltip(
+                `<div>
+                     Cluster 26: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2aa97bf9ea0247f98fac1858b03f5f39.setIcon(div_icon_a553c37d17139ecab6a4205c5d7f900c);
+            
+    
+            var marker_60b11adb03d7e7054d0989c902c5f34f = L.marker(
+                [49.1737209, 16.5263913],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_0c3e60533066bd46ee66fb56771eced5 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_90a914543a6333f8b0eb6ee8a021feec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8a3a2be0a7e134fc0f326311e07e688 = $(`<div id="html_d8a3a2be0a7e134fc0f326311e07e688" style="width: 100.0%; height: 100.0%;"><b>Cluster 27</b><br>Celková hodnota: 1<br>Školy:<br>ZŠ a MŠ dr. Eduarda Beneše, Pražská 112, 331 44 Kožlany: 1</div>`)[0];
+                popup_90a914543a6333f8b0eb6ee8a021feec.setContent(html_d8a3a2be0a7e134fc0f326311e07e688);
+            
+        
+
+        marker_60b11adb03d7e7054d0989c902c5f34f.bindPopup(popup_90a914543a6333f8b0eb6ee8a021feec)
+        ;
+
+        
+    
+    
+            marker_60b11adb03d7e7054d0989c902c5f34f.bindTooltip(
+                `<div>
+                     Cluster 27: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60b11adb03d7e7054d0989c902c5f34f.setIcon(div_icon_0c3e60533066bd46ee66fb56771eced5);
+            
+    
+            var marker_8031e18e5962b5cc7d8d0f01a31abb33 = L.marker(
+                [49.0501904, 14.1921926],
+                {
+}
+            ).addTo(map_be5e3414605353123bbe37abe61fb4f0);
+        
+    
+            var div_icon_f49f42a7967af69d2f9438095118b110 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: rgba(255,0,0,0.65);\n        border: 3px solid #ff0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-weight: bold;\n        font-size: 8px;\n        text-align: center;\n    \"\u003e1\u003c/div\u003e\n    ",
+  "className": "empty",
+});
+        
+    
+        var popup_5b8144100cf89267aac80e007c4b9f00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab3408857223af30b73da0aa0b7f6802 = $(`<div id="html_ab3408857223af30b73da0aa0b7f6802" style="width: 100.0%; height: 100.0%;"><b>Cluster 28</b><br>Celková hodnota: 1<br>Školy:<br>Základní škola, Bavorovská 306, 384 11 Netolice: 1</div>`)[0];
+                popup_5b8144100cf89267aac80e007c4b9f00.setContent(html_ab3408857223af30b73da0aa0b7f6802);
+            
+        
+
+        marker_8031e18e5962b5cc7d8d0f01a31abb33.bindPopup(popup_5b8144100cf89267aac80e007c4b9f00)
+        ;
+
+        
+    
+    
+            marker_8031e18e5962b5cc7d8d0f01a31abb33.bindTooltip(
+                `<div>
+                     Cluster 28: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8031e18e5962b5cc7d8d0f01a31abb33.setIcon(div_icon_f49f42a7967af69d2f9438095118b110);
+            
+</script>
+</html>
