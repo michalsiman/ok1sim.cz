@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MeshCore — Připoj se k síti</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #060a10;
@@ -82,7 +82,7 @@
   }
   nav .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   .nav-logo {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
     font-size: 1.3rem;
     letter-spacing: -0.03em;
@@ -158,7 +158,7 @@
   .hero-badge span { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: pulse 1.5s infinite; }
 
   .hero h1 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(2.8rem, 6vw, 5rem);
     font-weight: 800;
     line-height: 1.05;
@@ -239,7 +239,7 @@
     background: var(--accent);
   }
   .section-title {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     letter-spacing: -0.03em;
@@ -276,7 +276,7 @@
   .step:hover::before { opacity: 1; }
 
   .step-num {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 3rem;
     font-weight: 800;
     color: var(--border);
@@ -285,7 +285,7 @@
   }
   .step:hover .step-num { color: rgba(0,200,160,0.3); }
   .step-content h3 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -339,7 +339,7 @@
     border: 1px solid rgba(0,200,160,0.15);
   }
   .card h3 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -468,7 +468,7 @@
   }
   .hw-card:hover { border-color: rgba(0,200,160,0.4); box-shadow: 0 0 30px rgba(0,200,160,0.1); }
   .hw-icon { font-size: 2rem; margin-bottom: 12px; }
-  .hw-card h4 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
+  .hw-card h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
   .hw-card p { font-size: 0.82rem; color: var(--text-muted); }
   .hw-badge {
     display: inline-block;
@@ -590,7 +590,7 @@
   }
   .stat:last-child { border-right: none; }
   .stat-num {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 2.2rem;
     font-weight: 800;
     background: linear-gradient(135deg, var(--accent), var(--accent2));
