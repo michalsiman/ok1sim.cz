@@ -18,7 +18,12 @@
       align-items:center;
       justify-content:center;
     }
-    .container{padding:2rem;text-align:center}
+
+    .container{
+      padding:2rem;
+      text-align:center;
+    }
+
     h1{
       font-size:clamp(3rem, 9vw, 8rem);
       margin:0;
@@ -27,15 +32,46 @@
       text-transform:uppercase;
       text-shadow:0 8px 30px rgba(0,0,0,0.6);
     }
+
+    .links{
+      margin-top:2rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.8rem;
+      align-items:center;
+    }
+
+    .links a{
+      color:var(--text);
+      text-decoration:none;
+      font-weight:700;
+      letter-spacing:0.05em;
+      opacity:0.85;
+      transition:all 0.2s ease;
+    }
+
+    .links a:hover{
+      opacity:1;
+      transform:scale(1.05);
+    }
+
     @media (prefers-color-scheme: light){
       body{background:linear-gradient(135deg,#f8fafc 0%,#e6f7f7 100%);color:#0b1220}
       h1{text-shadow:0 6px 20px rgba(255,255,255,0.6)}
+      .links a{color:#0b1220}
     }
   </style>
 </head>
 <body>
-  <main class="container" role="main" >
+  <main class="container" role="main">
     <h1>OK1SIM</h1>
+
+    <div class="links">
+      <a href="https://qrz.com/..." target="_blank">QRZ profil</a>
+      <a href="https://tvuj-blog.cz" target="_blank">Můj blog</a>
+      <a href="https://..." target="_blank">Další odkaz</a>
+    </div>
+
   </main>
 </body>
 </html>
