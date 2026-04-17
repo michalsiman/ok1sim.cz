@@ -55,6 +55,15 @@
       transform:scale(1.05);
     }
 
+    .avatar{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    }
+
     @media (prefers-color-scheme: light){
       body{background:linear-gradient(135deg,#f8fafc 0%,#e6f7f7 100%);color:#0b1220}
       h1{text-shadow:0 6px 20px rgba(255,255,255,0.6)}
@@ -64,6 +73,9 @@
 </head>
 <body>
   <main class="container" role="main">
+
+    <img src="moje-foto.jpg" alt="OK1SIM" class="avatar">
+    
     <h1>OK1SIM</h1>
 
     <div class="links">
