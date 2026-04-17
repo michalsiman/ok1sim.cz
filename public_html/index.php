@@ -67,8 +67,8 @@
     <h1>OK1SIM</h1>
 
     <div class="links">
-      <a href="https://www.qrz.com/db/OK1SIM" target="_blank">QRZ profile</a>
-      <a href="https://www.ok1sim.cz/" target="_blank">Personal blog (soon)</a>
+      <a href="https://www.qrz.com/db/OK1SIM">QRZ profile</a>
+      <a href="https://www.ok1sim.cz/">Personal blog (soon)</a>
     </div>
 
   </main>
